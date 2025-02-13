@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subject Currently Enrolled  </title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #ffffff;
+    }
+
+    header {
+      background-color: black;
+      color: white;
+      padding: 20px;
+      text-align: left;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      letter-spacing: 1.5px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 10px;
+    }
+
+    .menu {
+      width: 20%;
+      background-color: black;
+      padding: 10px;
+    }
+
+    .menu a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      margin: 5px 0;
+      background-color: blue; /* Teal */
+      border-radius: 5px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .menu a:hover {
+      background-color: grey; /* Darker Teal */
+      transform: scale(1.05);
+    }
+
+    .main {
+      width: 60%;
+      padding: 10px;
+      text-align: left;
+    }
+
+    .main h2 {
+      color: black;
+      margin-bottom: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: black;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f0f0f0;
+    }
+
+    tr:hover {
+      background-color: #ddd;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .menu, .main {
+        width: 100%;
+      }
+
+      .menu {
+        text-align: center;
+      }
+    }
+  </style>
+  <!-- Add Google Fonts for Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <h1>Jian Keith Tagalog</h1>
+  </header>
+
+  <div class="container">
+    <div class="menu">
+      <a href="index.html">About ME</a>
+      <a href="subjects.html">Subject Taken</a>
+      <a href="currentsubject.html">Subject Currently Enrolled</a>
+      <a href="contacts.html">Contact Me</a>
+      <a href="favorites.html">My Favorites</a>
+      <a href="Gallery.html">Gallery</a>
+    </div>
+
+    <div class="main">
+      <h2>Subject Currently Enrolled</h2>
+      <table>
+        <tr>
+          <th>Subject Name</th>
+          <th>Description</th>
+          <th>Schedule</th>
+          <th>Units</th>
+        </tr>
+        <tr>
+          <td>CSIT 5</td>
+          <td>INFORMATION MANAGEMENT</td>
+          <td>
+            TTH 3:05P-4:05P   <br>TTH 4:10P-5:40P<br>
+            
+          </td>
+          <td>3.0</td>
+        </tr>
+        <tr>
+          <td>ITP 4</td>
+          <td>INTEGRATIVE PROGRAMMING & TECHNOLOGIES 1</td>
+          <td>
+            MW 4:10P-5:10P   <br>TTH 11:10-12:40P<br>
+          </td>
+          <td>3.0</td>
+        </tr>
+        <tr>
+            <td>ITP 5</td>
+            <td>NETWORKING 2 (CISCO 2: ROUTING PROTOCOLS & CONCEPTS)</td>
+            <td>
+              MW 8:00A-9:30A   <br>MW 9:35A-10:35A<br>
+            </td>
+            <td>3.0</td>
+          </tr>
+          <tr>
+            <td>ITP 6</td>
+            <td>INTRODUCTION TO HUMAN COMPUTER INTERACTION</td>
+            <td>
+              MW 11:10N-12:10N   <br>MW 1:00P-2:30P<br>
+              
+            </td>
+            <td>3.0</td>
+          </tr>
+          <tr>
+            <td>PHILO 1</td>
+            <td>ETHICS/ETIKA</td>
+            <td>
+              TTH 8:00A-11:00A   
+              
+            </td>
+            <td>3.0</td>
+          </tr>
+          <tr>
+            <td>COM 1</td>
+            <td>PURPOSE COMMUNICATION/ MALAYUNING KOMUNIKASYON</td>
+            <td>
+              TTH 2:35P-4:05P   
+              
+            </td>
+            <td>3.0</td>
+          </tr>
+          <tr>
+            <td>PE 4</td>
+            <td>PATH FIT 4: SPORTS (TEAM)</td>
+            <td>
+              F 6:00A-8:00A   
+              
+            </td>
+            <td>2.0</td>
+          </tr>
+        
+     
+      </table>
+    </div>
+  </div>
+
+
+</body>
+</html>
