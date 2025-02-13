@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - Japhet C. Barri</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #ffffff;
+    }
+
+    header {
+      background-color: black;
+      color: white;
+      padding: 20px;
+      text-align: left;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      letter-spacing: 1.5px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 10px;
+    }
+
+    .menu {
+      width: 20%;
+      background-color: black;
+      padding: 10px;
+    }
+
+    .menu a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      margin: 5px 0;
+      background-color: blue; /* Teal */
+      border-radius: 5px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .menu a:hover {
+      background-color: grey; /* Darker Teal */
+      transform: scale(1.05);
+    }
+
+    .main {
+      width: 60%;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .main h2 {
+      color: black;
+      margin-bottom: 20px;
+    }
+
+    .carousel-inner img {
+      width: 100%;
+      height: 400px; /* Fixed height for all images */
+      object-fit: cover; /* Ensures images maintain aspect ratio */
+      border-radius: 10px;
+    }
+
+    .carousel-control {
+      background-color: black(138, 43, 226, 0.5); /* Purple with transparency */
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .carousel-control:hover {
+      background-color: black(138, 43, 226, 0.8); /* Darker purple on hover */
+    }
+
+    .carousel-indicators li {
+      background-color: #8a2be2; /* Purple */
+      border: 1px solid #8a2be2;
+    }
+
+    .carousel-indicators .active {
+      background-color: #20b2aa; /* Teal */
+    }
+
+
+    @media only screen and (max-width: 768px) {
+      .menu, .main {
+        width: 100%;
+      }
+
+      .menu {
+        text-align: center;
+      }
+
+      .carousel-inner img {
+        height: 300px; /* Adjust height for smaller screens */
+      }
+    }
+  </style>
+  <!-- Add Google Fonts for Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Add Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!-- Add jQuery and Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Japhet C. Barri</h1>
+  </header>
+
+  <div class="container">
+    <div class="menu">
+      <a href="index.html">About ME</a>
+      <a href="subjects.html">Subject Taken</a>
+      <a href="Enrolled.html">Subject Currently Enrolled</a>
+      <a href="contacts.html">Contact Me</a>
+      <a href="favorites.html">My Favorites</a>
+      <a href="Gallery.html">Gallery</a>
+    </div>
+
+    <div class="main">
+      <h2>My Gallery</h2>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+          <li data-target="#myCarousel" data-slide-to="5"></li>
+          <li data-target="#myCarousel" data-slide-to="6"></li>
+          <li data-target="#myCarousel" data-slide-to="7"></li>
+          <li data-target="#myCarousel" data-slide-to="8"></li>
+          <li data-target="#myCarousel" data-slide-to="9"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="C:\Users\LENOVO\Downloads\476593069_1706217516953834_4799865515443271074_n.jpg" alt="Picture 1">
+          </div>
+          <div class="item">
+            <img src="C:\Users\LENOVO\Downloads\467464345_454798957493688_6985080833368562500_n.jpg" alt="Picture 2">
+          </div>
+          <div class="item">
+            <img src="C:\Users\LENOVO\Downloads\476162822_1318542122681072_3456754465250720394_n.jpg" alt="Picture 3">
+          </div>
+          <div class="item">
+            <img src="C:\Users\LENOVO\Downloads\473049546_2004814070032805_8546484440961226457_n.jpg" alt="Picture 4">
+          </div>
+          <div class="item">
+            <img src="C:\Users\LENOVO\Downloads\476588994_648095544360741_480524591437234721_n.jpg" alt="Picture 5">
+          </div>
+          <div class="item">
+            <img src="C:\Users\LENOVO\Downloads\476916745_602174095944746_8056282889855400989_n.jpg" alt="Picture 6">
+          </div>
+          <div class="item">
+            <img src="C:\Users\LENOVO\Downloads\476687871_1138299674509180_6209430823336238481_n.jpg" alt="Picture 7">
+          </div>
+          <div class="item">
+            <img src="C:\Users\LENOVO\Downloads\474682264_1282069833015647_7961673293385200899_n.jpg" alt="Picture 8">
+          </div>
+          <div class="item">
+            <img src="C:\Users\LENOVO\Downloads\476184974_1277751743482038_5396378097243380199_n.jpg" alt="Picture 9">
+          </div>
+          <div class="item">
+            <img src="C:\Users\LENOVO\Downloads\477024155_687530360471775_5096575644372071079_n.jpg" alt="Picture 10">
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>

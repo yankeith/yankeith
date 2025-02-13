@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subjects - Page 2</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #ffffff;
+    }
+
+    header {
+      background-color: black;
+      color: white;
+      padding: 20px;
+      text-align: left;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      letter-spacing: 1.5px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 10px;
+    }
+
+    .menu {
+      width: 20%;
+      background-color: black;
+      padding: 10px;
+    }
+
+    .menu a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      margin: 5px 0;
+      background-color: blue; /* Teal */
+      border-radius: 5px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .menu a:hover {
+      background-color: grey; /* Darker Teal */
+      transform: scale(1.05);
+    }
+
+    .main {
+      width: 60%;
+      padding: 10px;
+      text-align: left;
+    }
+
+    .main h2 {
+      color: black;
+      margin-bottom: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+
+    th, td {
+      padding: 5px;
+      text-align: left;
+    }
+
+    th {
+      background-color: black;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f0f0f0;
+    }
+
+    tr:hover {
+      background-color: #ddd;
+    }
+
+    .pagination {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .pagination a {
+      color: black;
+      padding: 8px 16px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      border: 1px solid lightgrey;
+      border-radius: 5px;
+      margin: 0 5px;
+    }
+
+    .pagination a:hover {
+      background-color: lightgrey;
+      color: white;
+    }
+
+    .pagination a.active {
+      background-color: black;
+      color: white;
+    }
+
+    .navigation-arrows {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .navigation-arrows a {
+      color: black;
+      font-size: 1.5rem;
+      text-decoration: none;
+      margin: 0 10px;
+      transition: color 0.3s ease;
+    }
+
+    .navigation-arrows a:hover {
+      color: #1a9c95; /* Darker Teal */
+    }
+
+
+
+    @media only screen and (max-width: 768px) {
+      .menu, .main {
+        width: 100%;
+      }
+
+      .menu {
+        text-align: center;
+      }
+    }
+  </style>
+  <!-- Add Google Fonts for Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <h1>Jian Keith Tagalog</h1>
+  </header>
+
+  <div class="container">
+    <div class="menu">
+      <a href="index.html">About ME</a>
+      <a href="subjects.html">Subject Taken</a>
+      <a href="currentsubject.html">Subject Currently Enrolled</a>
+      <a href="contacts.html">Contact Me</a>
+      <a href="favorites.html">My Favorites</a>
+      <a href="Gallery.html">Gallery</a>
+    </div>
+
+    <div class="main">
+      <h2>Subject Taken - Page 2</h2>
+      <table>
+        <tr>
+          <th>Subject Name</th>
+          <th>Description</th>
+          <th>Units</th>
+        </tr>
+        <tr>
+          <td>CSIT 3</td>
+          <td>INTERMIDIATE PROGRAMMING/COMPUTER PROGRAMMING 2</td>
+          <td>3.0</td>
+        </tr>
+        <tr>
+          <td>ITP 1<td>  
+            <td>IT FUNDAMENTALS	</td>
+          <td>3.0</td>
+        </tr>
+        <tr>
+          <td>ITP 2</td>
+          <td>DISCRETE MATHEMATICS	</td>
+          <td>3.0</td>
+        </tr>
+
+        <tr>
+          <td>MATH1</td>
+          <td>MATHEMATICS IN THE MODERN WORLD/MATEMATIKA SA MAKABAGONG DAIGDIG	</td>
+          <td>3.0</td>
+        </tr>
+        <tr>
+
+        <tr>
+          <td>NSTP 12L</td>
+          <td>NSTP 2-LITERACY TRAINING SERVICE ||	</td>
+          <td>3.0</td>
+        </tr>
+
+        <tr>
+          <td>PE 2</td>
+          <td>PATH FIT 2: FITNESS TRAINING	</td>
+          <td>2.0</td>
+        </tr>
+        <tr>
+          <td>EP 1S</td>
+          <td>ENGLISH PROFICIENCY - START |		</td>
+          <td>3.0</td>
+        </tr>
+      </table>
+
+      <!-- Pagination -->
+      <div class="pagination">
+        <a href="subjects.html">1</a>
+        <a href="subject2.html" class="active">2</a>
+        <a href="subject3.html">3</a>
+      </div>
+
+      <!-- Navigation Arrows -->
+      <div class="navigation-arrows">
+        <a href="subjects.html">&#8592; Back</a>
+        <a href="subject3.html">Next &#8594;</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 ITP4 | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
